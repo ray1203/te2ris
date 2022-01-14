@@ -286,7 +286,7 @@ MonoBehaviour:
   backgroundNode: {fileID: 1936359973}
   boardNode: {fileID: 1890692333}
   tetrominoNode: {fileID: 275414967}
-  boardWidth: 10
+  boardWidth: 11
   boardHeight: 20
   fallCycle: 1
 --- !u!1 &1890692332

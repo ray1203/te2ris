@@ -31,11 +31,14 @@ public class block : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.A))
         {
             pos.x -= 0.5f;
+            
         }
         else if (Input.GetKeyDown(KeyCode.D))
         {
             pos.x += 0.5f;
+            
         }
+        
         transform.position = pos;
     }
     private void limit_move()
