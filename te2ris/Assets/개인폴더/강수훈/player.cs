@@ -65,5 +65,9 @@ public class player : MonoBehaviour
         {
             canjump = 1;
         }
+        if (collision.gameObject.tag == "block")
+        {
+            canjump = 1;
+        }
     }
 }
