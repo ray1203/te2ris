@@ -283,11 +283,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6548980826950094913, guid: 91e3b6710cbdd3e448574b1bf971cc49, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.033
+      value: -0.28
       objectReference: {fileID: 0}
     - target: {fileID: 6548980826950094913, guid: 91e3b6710cbdd3e448574b1bf971cc49, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.095
+      value: 3.73
       objectReference: {fileID: 0}
     - target: {fileID: 6548980826950094913, guid: 91e3b6710cbdd3e448574b1bf971cc49, type: 3}
       propertyPath: m_LocalPosition.z
@@ -324,6 +324,14 @@ PrefabInstance:
     - target: {fileID: 6548980826950094919, guid: 91e3b6710cbdd3e448574b1bf971cc49, type: 3}
       propertyPath: m_Name
       value: "T\uBE14\uB85D (1)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6548980826950094919, guid: 91e3b6710cbdd3e448574b1bf971cc49, type: 3}
+      propertyPath: m_TagString
+      value: block
+      objectReference: {fileID: 0}
+    - target: {fileID: 8276607451702932386, guid: 91e3b6710cbdd3e448574b1bf971cc49, type: 3}
+      propertyPath: speed
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91e3b6710cbdd3e448574b1bf971cc49, type: 3}
@@ -471,7 +479,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 1, g: 0.051886797, b: 0.051886797, a: 1}
+  m_Color: {r: 0.05098039, g: 0.13426904, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
