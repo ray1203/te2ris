@@ -6,7 +6,7 @@ public class block : MonoBehaviour
 {
     [SerializeField]
     public float speed;
-
+  
     // Start is called before the first frame update
     void Start()
     {
@@ -16,13 +16,18 @@ public class block : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rotate();
-        move();
+        
+        if(GetComponent<pixel>().flag ==1)
+        {
+            move();
+            rotate();
+        }
         limit_move();
     }
+
     private void rotate()
     {
-        if(Input.GetKeyDown(KeyCode.LeftShift))                 //왼쪽 쉬프트 누르면
+        if(Input.GetKeyDown(KeyCode.LeftShift))               //왼쪽 쉬프트 누르면
         {
             transform.Rotate(0, 0, +90);                    //90도 회전 시키기
         }
@@ -42,6 +47,8 @@ public class block : MonoBehaviour
         }
         transform.position = pos;                       //새로운 변수의 변경된 값을 현재 위치에 대입
     }
+
+
     private void limit_move()
     {
         Vector3 limit_pos = Camera.main.WorldToViewportPoint(transform.position);           //화면 비율변수 생성

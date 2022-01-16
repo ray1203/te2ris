@@ -447,9 +447,10 @@ GameObject:
   - component: {fileID: 7380386039235903160}
   - component: {fileID: 7380386039235903110}
   - component: {fileID: 7380386039235903161}
+  - component: {fileID: 4818220356161581492}
   m_Layer: 0
   m_Name: "Z\uBE14\uB85D"
-  m_TagString: Untagged
+  m_TagString: block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -506,3 +507,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  can_move: 1
+--- !u!114 &4818220356161581492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7380386039235903163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0aa858a635b0e444812a1c2b8e1b1b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flag: 1
