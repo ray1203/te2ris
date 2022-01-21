@@ -5,14 +5,21 @@ using UnityEngine;
 public class Destroyer : MonoBehaviour
 {
     private List<BlockCounter> blockCounters;
+    public GameObject col;
     // Start is called before the first frame update
     void Start()
     {
+        for(int i = 0; i < 20; i++)
+        {
+            GameObject newCol = Instantiate(col, transform);
+            newCol.transform.position = new Vector2 (-0.35f, -4.0f + 0.5f*i);
+        }
         blockCounters = new List<BlockCounter>();
         for(int i = 0; i < this.transform.childCount; i++)
         {
             blockCounters.Add(this.transform.GetChild(i).GetComponent<BlockCounter>());
         }
+        
     }
     void destroyCheck()
     {
@@ -28,7 +35,7 @@ public class Destroyer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.LeftShift))
+        
             destroyCheck();
     }
 }
