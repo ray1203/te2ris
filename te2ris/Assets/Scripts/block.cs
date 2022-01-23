@@ -9,6 +9,10 @@ public class block : MonoBehaviour
   
     void Update()
     {
+        if (transform.childCount == 0)
+        {
+            Destroy(gameObject);
+        }
         if(GetComponentInChildren<pixel>().flag ==1)
         {
             move();
