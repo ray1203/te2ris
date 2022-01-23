@@ -119,7 +119,7 @@ public class Stage : MonoBehaviour
         return tile;
     }
 
-    void CreateBackground()
+    public void CreateBackground()
     {
         Color color = Color.gray;
         
@@ -147,7 +147,7 @@ public class Stage : MonoBehaviour
         }
     }
 
-    void CreateTetromino()
+    public void CreateTetromino()
     {
         int index = Random.Range(0,7);
         Color32 color = Color.white;
