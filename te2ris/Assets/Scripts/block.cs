@@ -13,7 +13,7 @@ public class block : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        if(GetComponentInChildren<pixel>().flag ==1)
+        if(transform.childCount!=0&&GetComponentInChildren<pixel>().flag ==1)
         {
             move();
             rotate();
