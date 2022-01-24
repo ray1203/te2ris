@@ -47,11 +47,10 @@ public class pixel : MonoBehaviour
     
     // 타일블럭으로 접근(한칸 한칸씩)
     private void OnCollisionEnter2D(Collision2D other) { 
-        if(other.gameObject.tag == "ground")
+        Debug.Log("테스트!!");
+        if(other.gameObject.tag == "ground" && flag == 1)
         {
-            var parent =transform.parent.gameObject;
-            parent.tag = "ground";
-            flag = 0;
+            gameObject.GetComponentInParent<block>().set_ground();
         }
     }
 }

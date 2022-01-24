@@ -58,4 +58,18 @@ public class block : MonoBehaviour
         }
         transform.position = Camera.main.ViewportToWorldPoint(limit_pos);           //ȭ�� ���������� ���� ȭ�鿡 ����
     }
+    
+    public void set_ground()
+    {
+        gameObject.tag = "ground";
+        transform.GetChild(0).tag = "ground";
+        transform.GetChild(0).GetComponent<pixel>().flag = 0;
+        transform.GetChild(1).tag = "ground";
+        transform.GetChild(1).GetComponent<pixel>().flag = 0;
+        transform.GetChild(2).tag = "ground";
+        transform.GetChild(2).GetComponent<pixel>().flag = 0;
+        transform.GetChild(3).tag = "ground";
+        transform.GetChild(3).GetComponent<pixel>().flag = 0;
+        FindObjectOfType<spawner>().new_teromino();
+    }
 }
