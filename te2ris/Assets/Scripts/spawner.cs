@@ -34,6 +34,10 @@ public class spawner : MonoBehaviour
         cur_block = pre_block;
         pre_block = Random.Range(0, tetrominos.Length);
         prefab.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+        prefab.transform.GetChild(0).GetComponent<pixel>().flag = 0;
+        prefab.transform.GetChild(1).GetComponent<pixel>().flag = 0;
+        prefab.transform.GetChild(2).GetComponent<pixel>().flag = 0;
+        prefab.transform.GetChild(3).GetComponent<pixel>().flag = 0;
     }
 
     public void destroy_preview()
