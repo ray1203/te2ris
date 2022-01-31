@@ -61,6 +61,7 @@ public class block : MonoBehaviour
     
     public void set_ground()
     {
+        FindObjectOfType<spawner>().destroy_preview();
         gameObject.tag = "ground";
         transform.GetChild(0).tag = "ground";
         transform.GetChild(0).GetComponent<pixel>().flag = 0;
