@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PausePage : MonoBehaviour
+public class Gamemanager : MonoBehaviour
 {
     public string thisScene;
     public GameObject pauseMenu;
@@ -29,9 +29,9 @@ public class PausePage : MonoBehaviour
         Time.timeScale = 1f;
     }
 
-    public void startPage(){
+    public void gotoStage(){
         Time.timeScale = 1f;
-        SceneManager.LoadSceneAsync("start");
+        SceneManager.LoadSceneAsync("StageSelect");
     }
 
 
