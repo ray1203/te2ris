@@ -15,7 +15,7 @@ public class pool : MonoBehaviour
     private int halfWidth;
     private int halfHeight;
 
-    void creatBlock(Transform pos)
+    public void creatBlock(Transform pos)
     {
         var go = Instantiate(Prefab[Random.Range(0,7)]);
         go.transform.parent = pos;
