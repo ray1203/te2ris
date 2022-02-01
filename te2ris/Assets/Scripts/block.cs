@@ -13,7 +13,7 @@ public class block : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        if(GetComponentInChildren<pixel>().flag ==1)
+        if(transform.childCount!=0&&GetComponentInChildren<pixel>().flag ==1)
         {
             move();
             rotate();
@@ -57,5 +57,20 @@ public class block : MonoBehaviour
             limit_pos.x = 0.95f;
         }
         transform.position = Camera.main.ViewportToWorldPoint(limit_pos);           //ȭ�� ���������� ���� ȭ�鿡 ����
+    }
+    
+    public void set_ground()
+    {
+        FindObjectOfType<spawner>().destroy_preview();
+        gameObject.tag = "ground";
+        transform.GetChild(0).tag = "ground";
+        transform.GetChild(0).GetComponent<pixel>().flag = 0;
+        transform.GetChild(1).tag = "ground";
+        transform.GetChild(1).GetComponent<pixel>().flag = 0;
+        transform.GetChild(2).tag = "ground";
+        transform.GetChild(2).GetComponent<pixel>().flag = 0;
+        transform.GetChild(3).tag = "ground";
+        transform.GetChild(3).GetComponent<pixel>().flag = 0;
+        FindObjectOfType<spawner>().new_teromino();
     }
 }

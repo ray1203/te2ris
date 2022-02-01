@@ -12,6 +12,7 @@ public class Destroyer : MonoBehaviour
         for(int i = 0; i < 20; i++)
         {
             GameObject newCol = Instantiate(col, transform);
+            newCol.tag = "destroyChecker";
             newCol.transform.position = new Vector2 (-0.35f, -4.0f + 0.5f*i);
         }
         blockCounters = new List<BlockCounter>();
@@ -21,7 +22,7 @@ public class Destroyer : MonoBehaviour
         }
         
     }
-    void destroyCheck()
+    public void destroyCheck()
     {
         for(int i = 0; i < blockCounters.Count; i++)
         {
@@ -31,11 +32,13 @@ public class Destroyer : MonoBehaviour
                 blockCounters[i].StartCoroutine(blockCounters[i].destroyBlocks());
             }
         }
+        for (int i = 0; i < blockCounters.Count; i++)
+            blockCounters[i].clearArr();
     }
     // Update is called once per frame
     void Update()
     {
         
-            destroyCheck();
+            //destroyCheck();
     }
 }

@@ -6,19 +6,42 @@ public class spawner : MonoBehaviour
 {
     [SerializeField]
     public GameObject[] tetrominos;
-    // Start is called before the first frame update
+    public GameObject preview;
+    private Destroyer destroyer;
+    private bool checkStart = false;
+    public int cur_block;
+    public int pre_block;
+    private GameObject prefab;
+    
     void Start()
     {
+        cur_block = Random.Range(0, tetrominos.Length);
+        pre_block = Random.Range(0, tetrominos.Length);
+
         new_teromino();
+        destroyer = GameObject.Find("destroyer").GetComponent<Destroyer>();
+        checkStart = true;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void new_teromino()
     {
-        Instantiate(tetrominos[Random.Range(0, tetrominos.Length)], transform.position, Quaternion.identity);
+        if(checkStart)
+            destroyer.destroyCheck();
+        Instantiate(tetrominos[cur_block], transform.position, Quaternion.identity);
+
+        // preview
+        prefab = Instantiate(tetrominos[pre_block], preview.transform.position, Quaternion.identity);
+        cur_block = pre_block;
+        pre_block = Random.Range(0, tetrominos.Length);
+        prefab.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+        prefab.transform.GetChild(0).GetComponent<pixel>().flag = 0;
+        prefab.transform.GetChild(1).GetComponent<pixel>().flag = 0;
+        prefab.transform.GetChild(2).GetComponent<pixel>().flag = 0;
+        prefab.transform.GetChild(3).GetComponent<pixel>().flag = 0;
+    }
+
+    public void destroy_preview()
+    {
+        Destroy(prefab);
     }
 }

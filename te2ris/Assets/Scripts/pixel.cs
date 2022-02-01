@@ -5,8 +5,9 @@ using UnityEngine;
 public class pixel : MonoBehaviour
 {
     [SerializeField]
-    public int flag = 1;  
-
+    public int flag = 1;
+    private static int curId = 0;
+    public int id;
     public Color color
     {
         set
@@ -44,14 +45,15 @@ public class pixel : MonoBehaviour
             Debug.LogError("You need to SpriteRenderer for Block");
         }
     }
-    
+    private void Start()
+    {
+        id = curId++;
+    }
     // 타일블럭으로 접근(한칸 한칸씩)
     private void OnCollisionEnter2D(Collision2D other) { 
-        if(other.gameObject.tag == "ground")
+        if(other.gameObject.tag == "ground" && flag == 1)
         {
-            var parent =transform.parent.gameObject;
-            parent.tag = "ground";
-            flag = 0;
+            gameObject.GetComponentInParent<block>().set_ground();
         }
     }
 }
