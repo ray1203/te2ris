@@ -203,7 +203,7 @@ GameObject:
   - component: {fileID: 212430699}
   m_Layer: 5
   m_Name: Stage9
-  m_TagString: Untagged
+  m_TagString: stageBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -338,6 +338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e5a4fafcff72da428732bc2d0c85167, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stageNumObject: {fileID: 948441339}
 --- !u!4 &507669541
 Transform:
   m_ObjectHideFlags: 0
@@ -366,7 +367,7 @@ GameObject:
   - component: {fileID: 750166836}
   m_Layer: 5
   m_Name: Stage6
-  m_TagString: Untagged
+  m_TagString: stageBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -561,7 +562,7 @@ GameObject:
   - component: {fileID: 948441341}
   m_Layer: 5
   m_Name: Stage1
-  m_TagString: Untagged
+  m_TagString: stageBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -776,7 +777,7 @@ GameObject:
   - component: {fileID: 1147843238}
   m_Layer: 5
   m_Name: Stage5
-  m_TagString: Untagged
+  m_TagString: stageBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -896,7 +897,7 @@ GameObject:
   - component: {fileID: 1219489502}
   m_Layer: 5
   m_Name: Stage2
-  m_TagString: Untagged
+  m_TagString: stageBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1125,7 +1126,7 @@ GameObject:
   - component: {fileID: 1276609530}
   m_Layer: 5
   m_Name: Stage8
-  m_TagString: Untagged
+  m_TagString: stageBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1245,7 +1246,7 @@ GameObject:
   - component: {fileID: 1279101301}
   m_Layer: 5
   m_Name: Stage7
-  m_TagString: Untagged
+  m_TagString: stageBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1365,7 +1366,7 @@ GameObject:
   - component: {fileID: 1698415683}
   m_Layer: 5
   m_Name: Stage3
-  m_TagString: Untagged
+  m_TagString: stageBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1485,7 +1486,7 @@ GameObject:
   - component: {fileID: 1981882043}
   m_Layer: 5
   m_Name: Stage4
-  m_TagString: Untagged
+  m_TagString: stageBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
