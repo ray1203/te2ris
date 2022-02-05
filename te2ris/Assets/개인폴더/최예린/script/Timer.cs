@@ -2,28 +2,43 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
+    public string thisScene;
     public Text timerTxt;
+    public GameObject fail;
     public float time = 100f;
     private float selectCountdown;
 
     void Start()
     {
         selectCountdown = time;
+        thisScene = SceneManager.GetActiveScene().name;
     }
 
     void Update()
     {
         if (Mathf.Floor(selectCountdown) <= 0)
         {
-            // 0초 도달 시 게임 종료 -> 함수 만들어야함
+            fail.SetActive(true);
         }
         else
         {
             selectCountdown -= Time.deltaTime;
             timerTxt.text = Mathf.Floor(selectCountdown).ToString();
         }
+    }
+
+    public void gotoStageList()
+    {
+        SceneManager.LoadScene("StageSelect");
+    }
+
+    public void Restart()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadSceneAsync(thisScene);
     }
 }
