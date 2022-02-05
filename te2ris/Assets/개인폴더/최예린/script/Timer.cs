@@ -16,6 +16,7 @@ public class Timer : MonoBehaviour
     {
         selectCountdown = time;
         thisScene = SceneManager.GetActiveScene().name;
+        Time.timeScale = 1f;
     }
 
     void Update()
@@ -23,6 +24,7 @@ public class Timer : MonoBehaviour
         if (Mathf.Floor(selectCountdown) <= 0)
         {
             fail.SetActive(true);
+            Time.timeScale = 0f;
         }
         else
         {
