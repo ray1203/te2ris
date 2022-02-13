@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class player : MonoBehaviour
 {
+    public GameObject clear;
     public float speed;                     //�÷��̾� ������ ��Ÿ���� ����
     public float power;                     //�����Ŀ� ��Ÿ���� ����
     public int canjump = 1;                //���� ���ɿ��θ� ��Ÿ���� ����
@@ -16,10 +17,12 @@ public class player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1f;
         myrigid = GetComponent<Rigidbody2D>();              //������ٵ� ������
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
     }
+
 
     // Update is called once per frame
     void Update()
@@ -87,6 +90,14 @@ public class player : MonoBehaviour
         {
             GetComponent<player>().canjump = 1;
         }
+        
+        if (collision.gameObject.tag == "goalLine")
+        {
+            Debug.Log("골라인");
+            clear.SetActive(true);
+            Time.timeScale = 0f;
+        }
+
     }
 
 }
