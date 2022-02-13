@@ -9,7 +9,7 @@ public class Timer : MonoBehaviour
     public string thisScene;
     public Text timerTxt;
     public GameObject fail;
-    public float time = 100f;
+    public float time = 200f;
     private float selectCountdown;
 
     void Start()
