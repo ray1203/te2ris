@@ -6,7 +6,7 @@ public class player : MonoBehaviour
 {
     public float speed;                     //�÷��̾� ������ ��Ÿ���� ����
     public float power;                     //�����Ŀ� ��Ÿ���� ����
-    private int canjump = 1;                //���� ���ɿ��θ� ��Ÿ���� ����
+    public int canjump = 1;                //���� ���ɿ��θ� ��Ÿ���� ����
     Rigidbody2D myrigid;                    //������ٵ� �������� ����
 
     //animation
@@ -81,16 +81,12 @@ public class player : MonoBehaviour
     }
 
 
-
-    private void OnCollisionEnter2D(Collision2D collision)          //��ü �浹 Ȯ�� �Լ�
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "ground")            //�±װ� �׶���,������ ��ü�� �浹�Ұ��
+        if (collision.gameObject.tag == "ground")
         {
-            canjump = 1;            //���� ����
-        }
-        if (collision.gameObject.tag == "block")
-        {
-            canjump = 1;
+            GetComponent<player>().canjump = 1;
         }
     }
+
 }
