@@ -9,11 +9,12 @@ TagManager:
   - b_ground
   - destroyChecker
   - stageBtn
+  - goalLine
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - goalLine
   - Water
   - UI
   - 
