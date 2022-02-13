@@ -2973,6 +2973,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 36af45f817607e24a8da35618654b7cc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2984,6 +2985,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!1001 &937913850205870861
 PrefabInstance:
+
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
