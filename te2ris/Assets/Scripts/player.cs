@@ -4,16 +4,21 @@ using UnityEngine;
 
 public class player : MonoBehaviour
 {
-    public float speed;                     //ÇÃ·¹ÀÌ¾î ¿òÁ÷ÀÓ ³ªÅ¸³»´Â º¯¼ö
-    public float power;                     //Á¡ÇÁÆÄ¿ö ³ªÅ¸³»´Â º¯¼ö
-    private int canjump = 1;                //Á¡ÇÁ °¡´É¿©ºÎ¸¦ ³ªÅ¸³»´Â º¯¼ö
-    Rigidbody2D myrigid;                    //¸®Áöµå¹Ùµð °®°í¿À´Â º¯¼ö
+    public float speed;                     //ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å¸ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+    public float power;                     //ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ ï¿½ï¿½Å¸ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+    private int canjump = 1;                //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½É¿ï¿½ï¿½Î¸ï¿½ ï¿½ï¿½Å¸ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+    Rigidbody2D myrigid;                    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ùµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+
+    //animation
+    SpriteRenderer spriteRenderer;
+    Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
-        myrigid = GetComponent<Rigidbody2D>();              //¸®Áöµå¹Ùµð °®°í¿È
-
+        myrigid = GetComponent<Rigidbody2D>();              //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ùµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -24,26 +29,37 @@ public class player : MonoBehaviour
         limit_move();
     }
 
-    private void move()                     //ÇÃ·¹ÀÌ¾î ¿òÁ÷ÀÓ ÇÔ¼ö
+    private void move()                     //ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô¼ï¿½
     {
-        Vector3 pos = transform.position;       //À§Ä¡°ªÀ» ´ãÀ» »õ·Î¿î º¯¼ö »ý¼º
-        if (Input.GetKey(KeyCode.LeftArrow))            //Å° ´©¸£¸é º¯¼ö°ªÀ» °¡°¨½ÃÅ´
+        Vector3 pos = transform.position;       //ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
         {
-            pos.x -= Time.deltaTime * speed;
-
+            if (Input.GetKey(KeyCode.LeftArrow))            //Å° ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å´
+            {
+                pos.x -= Time.deltaTime * speed;
+                spriteRenderer.flipX = false;
+                animator.SetBool("walk", true);
+            }
+            if (Input.GetKey(KeyCode.RightArrow))
+            {
+                pos.x += Time.deltaTime * speed;
+                spriteRenderer.flipX = true;
+                animator.SetBool("walk", true);
+            }
         }
-        if (Input.GetKey(KeyCode.RightArrow))
+        else
         {
-            pos.x += Time.deltaTime * speed;
-
+            animator.SetBool("walk", false);
         }
-        transform.position = pos;               //»õ·Î¿î º¯¼ö¸¦ ÇöÀç À§Ä¡¿¡ ´ëÀÔ½ÃÅ´
+        transform.position = pos;              //ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½ï¿½Ô½ï¿½Å´
+       
+            
     }
 
-    private void limit_move()                       //È­¸é¹ÛÀ¸·Î ¸ø³ª°¡°Ô ÇÏ´Â ÇÔ¼ö
-    {       //À§Ä¡¸¦ È­¸éºñÀ²(0,0)~(1,1)·Î ³ªÅ¸³¿
+    private void limit_move()                       //È­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï´ï¿½ ï¿½Ô¼ï¿½
+    {       //ï¿½ï¿½Ä¡ï¿½ï¿½ È­ï¿½ï¿½ï¿½ï¿½ï¿½(0,0)~(1,1)ï¿½ï¿½ ï¿½ï¿½Å¸ï¿½ï¿½
         Vector3 limit_pos = Camera.main.WorldToViewportPoint(transform.position);       
-        if( limit_pos.x <0.05f)                     //¹ÛÀ¸·Î ³ª°¡¸é ÅÚ·¹Æ÷Æ® ½ÃÅ´
+        if( limit_pos.x <0.05f)                     //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ú·ï¿½ï¿½ï¿½Æ® ï¿½ï¿½Å´
         {
             limit_pos.x = 0.05f;
         }
@@ -51,26 +67,26 @@ public class player : MonoBehaviour
         {
             limit_pos.x = 0.95f;
         }
-        //È­¸é ºñÀ²À» ÇöÀç À§Ä¡·Î ´Ù½Ã ¹Ù²Þ
+        //È­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½Ù½ï¿½ ï¿½Ù²ï¿½
         transform.position = Camera.main.ViewportToWorldPoint(limit_pos);           
     }
 
-    private void jump()         //Á¡ÇÁÇÔ¼ö
+    private void jump()         //ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½
     {
-        if(Input.GetKeyDown(KeyCode.RightShift) && canjump==1)              //Å°¸¦ ´©¸£°í Á¡ÇÁ °¡´ÉÇÑ »óÅÂÀÏ °æ¿ì
+        if(Input.GetKeyDown(KeyCode.RightShift) && canjump==1)              //Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
         {
-            myrigid.velocity = Vector2.up*power;                    //»ó´ÜÀ¸·Î ÈûÀ» ¹ÞÀ½
-            canjump = 0;                                            //Á¡ÇÁÇÒ°æ¿ì Á¡ÇÁ ºÒ°¡ »óÅÂ°¡ µÊ
+            myrigid.velocity = Vector2.up*power;                    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+            canjump = 0;                                            //ï¿½ï¿½ï¿½ï¿½ï¿½Ò°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ò°ï¿½ ï¿½ï¿½ï¿½Â°ï¿½ ï¿½ï¿½
         }
     }
 
 
 
-    private void OnCollisionEnter2D(Collision2D collision)          //¹°Ã¼ Ãæµ¹ È®ÀÎ ÇÔ¼ö
+    private void OnCollisionEnter2D(Collision2D collision)          //ï¿½ï¿½Ã¼ ï¿½æµ¹ È®ï¿½ï¿½ ï¿½Ô¼ï¿½
     {
-        if(collision.gameObject.tag == "ground")            //ÅÂ±×°¡ ±×¶ó¿îµå,ºí·ÏÀÎ ¹°Ã¼¿Í Ãæµ¹ÇÒ°æ¿ì
+        if(collision.gameObject.tag == "ground")            //ï¿½Â±×°ï¿½ ï¿½×¶ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½æµ¹ï¿½Ò°ï¿½ï¿½
         {
-            canjump = 1;            //Á¡ÇÁ °¡´É
+            canjump = 1;            //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         }
         if (collision.gameObject.tag == "block")
         {
