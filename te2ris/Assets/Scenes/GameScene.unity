@@ -1190,7 +1190,7 @@ GameObject:
   - component: {fileID: 718080324}
   - component: {fileID: 718080323}
   m_Layer: 0
-  m_Name: beach-cloud-03
+  m_Name: cloud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1255,7 +1255,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 718080322}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 358.2, y: 678.6, z: -16200}
+  m_LocalPosition: {x: -654, y: 637, z: 0}
   m_LocalScale: {x: 67.05, y: 67.05, z: 67.05}
   m_Children: []
   m_Father: {fileID: 1604765033}
@@ -1663,7 +1663,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 937913850438808744, guid: 12ce31a77869906479a7d5af19812d44, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.99
+      value: -3.93
       objectReference: {fileID: 0}
     - target: {fileID: 937913850438808744, guid: 12ce31a77869906479a7d5af19812d44, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2489,7 +2489,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1350859373}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.02, y: -5.76, z: 0}
+  m_LocalPosition: {x: 0.02, y: -6.05, z: 0}
   m_LocalScale: {x: 12.3224, y: 3.1701, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2806,6 +2806,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1549317926}
+  - component: {fileID: 1549317927}
   m_Layer: 0
   m_Name: preview
   m_TagString: Untagged
@@ -2821,12 +2822,20 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1549317925}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1561.68, y: 639.36, z: -19480.326}
+  m_LocalPosition: {x: -895, y: 292, z: 0}
   m_LocalScale: {x: 216, y: 216, z: 216}
   m_Children: []
   m_Father: {fileID: 1112297540}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!222 &1549317927
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549317925}
+  m_CullTransparentMesh: 1
 --- !u!1 &1592773301
 GameObject:
   m_ObjectHideFlags: 0
@@ -2929,7 +2938,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1604765032}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2941,7 +2950,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -252}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1649383692
@@ -3669,7 +3678,7 @@ GameObject:
   - component: {fileID: 1924852275}
   - component: {fileID: 1924852274}
   m_Layer: 0
-  m_Name: beach-cloud-03 (1)
+  m_Name: cloud(1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3734,8 +3743,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1924852273}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -489.6, y: 880.19995, z: -16200}
-  m_LocalScale: {x: 180, y: 180, z: 180}
+  m_LocalPosition: {x: 806, y: 519, z: 0}
+  m_LocalScale: {x: 88.578, y: 88.578, z: 88.578}
   m_Children: []
   m_Father: {fileID: 1604765033}
   m_RootOrder: 2
@@ -3909,7 +3918,7 @@ GameObject:
   - component: {fileID: 2129795527}
   - component: {fileID: 2129795528}
   m_Layer: 0
-  m_Name: beach-sky
+  m_Name: sky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3923,8 +3932,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2129795526}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -212.948, y: -1305, z: -16200}
-  m_LocalScale: {x: 180, y: 180, z: 180}
+  m_LocalPosition: {x: -79, y: -513, z: 0}
+  m_LocalScale: {x: 119.161804, y: 119.161804, z: 119.161804}
   m_Children: []
   m_Father: {fileID: 1604765033}
   m_RootOrder: 0
