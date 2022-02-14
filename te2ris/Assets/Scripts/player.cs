@@ -76,7 +76,7 @@ public class player : MonoBehaviour
 
     private void jump()         //�����Լ�
     {
-        if(Input.GetKeyDown(KeyCode.RightShift) && canjump==1)              //Ű�� ������ ���� ������ ������ ���
+        if(Input.GetKeyDown(KeyCode.Space) && canjump==1)              //Ű�� ������ ���� ������ ������ ���
         {
             myrigid.velocity = Vector2.up*power;                    //������� ���� ����
             canjump = 0;                                            //�����Ұ�� ���� �Ұ� ���°� ��

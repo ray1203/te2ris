@@ -23,7 +23,7 @@ public class block : MonoBehaviour
 
     private void rotate()
     {
-        if(Input.GetKeyDown(KeyCode.LeftShift))               //���� ����Ʈ ������
+        if(Input.GetKeyDown(KeyCode.S))               //���� ����Ʈ ������
         {
             transform.Rotate(0, 0, +90);                    //90�� ȸ�� ��Ű��
         }
