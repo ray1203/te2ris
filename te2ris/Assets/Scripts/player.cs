@@ -96,6 +96,7 @@ public class player : MonoBehaviour
         {
             Debug.Log("골라인");
             clear.SetActive(true);
+            GameObject.Find("StageData").GetComponent<StageSave>().SaveData();
             Time.timeScale = 0f;
         }
 
