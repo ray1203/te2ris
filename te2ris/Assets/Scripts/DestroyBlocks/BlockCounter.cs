@@ -7,6 +7,7 @@ public class BlockCounter : MonoBehaviour
     private static Dictionary<int, bool> removeCheck;
     private List<GameObject> blocks;
     public int showCount;
+
     private void Awake()
     {
         blocks = new List<GameObject>();

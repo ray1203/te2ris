@@ -8,6 +8,7 @@ public class player : MonoBehaviour
     public float speed;                     //�÷��̾� ������ ��Ÿ���� ����
     public float power;                     //�����Ŀ� ��Ÿ���� ����
     public int canjump = 1;                //���� ���ɿ��θ� ��Ÿ���� ����
+    public AudioClip clip;
     Rigidbody2D myrigid;                    //������ٵ� �������� ����
 
     //animation
@@ -55,8 +56,6 @@ public class player : MonoBehaviour
             animator.SetBool("walk", false);
         }
         transform.position = pos;              //���ο� ������ ���� ��ġ�� ���Խ�Ŵ
-       
-            
     }
 
     private void limit_move()                       //ȭ������� �������� �ϴ� �Լ�
@@ -79,7 +78,9 @@ public class player : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && canjump==1)              //Ű�� ������ ���� ������ ������ ���
         {
             myrigid.velocity = Vector2.up*power;                    //������� ���� ����
-            canjump = 0;                                            //�����Ұ�� ���� �Ұ� ���°� ��
+            canjump = 0;                                           //�����Ұ�� ���� �Ұ� ���°� ��
+            
+            SoundManager.instance.SFXPlay("jump", clip);
         }
     }
 

@@ -6,6 +6,7 @@ public class Destroyer : MonoBehaviour
 {
     private List<BlockCounter> blockCounters;
     public GameObject col;
+    public AudioClip clip;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +30,7 @@ public class Destroyer : MonoBehaviour
             if (blockCounters[i].getCount() >= 20)
             {
                 //blockCounters[i].destroyBlocks();
+                SoundManager.instance.SFXPlay("clear", clip);
                 blockCounters[i].StartCoroutine(blockCounters[i].destroyBlocks());
             }
         }
