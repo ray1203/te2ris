@@ -5,6 +5,19 @@ using System.IO;
 using System.Text;
 public class StageSave : MonoBehaviour
 {
+    public int currentStage = 0;
+    TimeLimit[] timeLimits = new TimeLimit[10] {//각 스테이지 제한시간 저장
+            new TimeLimit(0, 0, 0),
+            new TimeLimit(180, 120, 60),
+            new TimeLimit(180, 120, 60),
+            new TimeLimit(180, 120, 60),
+            new TimeLimit(120, 90, 60),
+            new TimeLimit(120, 90, 60),
+            new TimeLimit(120, 90, 60),
+            new TimeLimit(90, 70, 50),
+            new TimeLimit(90, 70, 50),
+            new TimeLimit(90, 70, 50),
+        };
     // Start is called before the first frame update
     void Start()
     {
@@ -76,6 +89,29 @@ public class StageSave : MonoBehaviour
         string str = ObjectToJson(stageData);
         CreateJsonFile(Application.dataPath, "StageData", str);
 
+    }
+    public void SaveData()
+    {
+        int stage = currentStage;
+        int star = 0;
+        int curTime =(int)GameObject.Find("SidePlace").GetComponent<Timer>().time;
+        if (curTime < timeLimits[stage].limit3)
+        {
+            star = 1;
+        }else if (curTime < timeLimits[stage].limit2 && curTime >= timeLimits[stage].limit3)
+        {
+            star = 2;
+        }else if (curTime < timeLimits[stage].limit1&&curTime>=timeLimits[stage].limit2)
+        {
+            star = 3;
+        }else if (curTime >= timeLimits[stage].limit1)
+        {
+            star = 4;
+        }
+        StageData stageData = LoadJsonFile<StageData>(Application.dataPath, "StageData");
+        stageData.clearAmount[stage] = stageData.clearAmount[stage] < star ? star : stageData.clearAmount[stage];
+        string str = ObjectToJson(stageData);
+        CreateJsonFile(Application.dataPath, "StageData", str);
     }
     public void SaveData(int stage,int star)//현 스테이지, 별 갯수
     {

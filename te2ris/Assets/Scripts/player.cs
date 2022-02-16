@@ -8,6 +8,7 @@ public class player : MonoBehaviour
     public float speed;                     //�÷��̾� ������ ��Ÿ���� ����
     public float power;                     //�����Ŀ� ��Ÿ���� ����
     public int canjump = 1;                //���� ���ɿ��θ� ��Ÿ���� ����
+    public AudioClip clip;
     Rigidbody2D myrigid;                    //������ٵ� �������� ����
 
     //animation
@@ -55,8 +56,6 @@ public class player : MonoBehaviour
             animator.SetBool("walk", false);
         }
         transform.position = pos;              //���ο� ������ ���� ��ġ�� ���Խ�Ŵ
-       
-            
     }
 
     private void limit_move()                       //ȭ������� �������� �ϴ� �Լ�
@@ -76,25 +75,24 @@ public class player : MonoBehaviour
 
     private void jump()         //�����Լ�
     {
-        if(Input.GetKeyDown(KeyCode.RightShift) && canjump==1)              //Ű�� ������ ���� ������ ������ ���
+        if(Input.GetKeyDown(KeyCode.Space) && canjump==1)              //Ű�� ������ ���� ������ ������ ���
         {
             myrigid.velocity = Vector2.up*power;                    //������� ���� ����
-            canjump = 0;                                            //�����Ұ�� ���� �Ұ� ���°� ��
+            canjump = 0;                                           //�����Ұ�� ���� �Ұ� ���°� ��
+            
+            SoundManager.instance.SFXPlay("jump", clip);
         }
     }
 
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "ground")
-        {
-            GetComponent<player>().canjump = 1;
-        }
         
         if (collision.gameObject.tag == "goalLine")
         {
             Debug.Log("골라인");
             clear.SetActive(true);
+            GameObject.Find("StageData").GetComponent<StageSave>().SaveData();
             Time.timeScale = 0f;
         }
 

@@ -6,6 +6,7 @@ public class block : MonoBehaviour
 {
     [SerializeField]
     public float speed;
+    public AudioClip clip;
   
     void Update()
     {
@@ -23,7 +24,7 @@ public class block : MonoBehaviour
 
     private void rotate()
     {
-        if(Input.GetKeyDown(KeyCode.LeftShift))               //���� ����Ʈ ������
+        if(Input.GetKeyDown(KeyCode.S))               //���� ����Ʈ ������
         {
             transform.Rotate(0, 0, +90);                    //90�� ȸ�� ��Ű��
         }
@@ -61,6 +62,7 @@ public class block : MonoBehaviour
     
     public void set_ground()
     {
+        SoundManager.instance.SFXPlay("dump", clip);
         FindObjectOfType<spawner>().destroy_preview();
         gameObject.tag = "ground";
         transform.GetChild(0).tag = "ground";

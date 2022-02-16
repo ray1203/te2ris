@@ -8,11 +8,12 @@ public class StageBtnCont : MonoBehaviour
 {
     int levelat; 
     public GameObject stageNumObject;
+    private GameObject stageData;
 
     void Start()
     {
         Button[] stages = stageNumObject.GetComponentsInChildren<Button>();
-
+        stageData = GameObject.Find("StageData");
         levelat = PlayerPrefs.GetInt("levelReached");
         print(levelat);
         for (int i = levelat + 1; i < stages.Length; i++)
@@ -23,7 +24,9 @@ public class StageBtnCont : MonoBehaviour
 
     public void Stage1_Selected()
     {
-        SceneManager.LoadScene("GameScene");
+        stageData.GetComponent<StageSave>().currentStage = 1;
+        DontDestroyOnLoad(stageData);
+        SceneManager.LoadScene("stage1");
     }
     public void Stage2_Selected()
     {

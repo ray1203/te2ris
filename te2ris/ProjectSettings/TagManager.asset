@@ -10,6 +10,7 @@ TagManager:
   - destroyChecker
   - stageBtn
   - goalLine
+  - wall
   layers:
   - Default
   - TransparentFX
