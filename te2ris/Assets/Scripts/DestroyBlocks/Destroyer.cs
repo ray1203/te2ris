@@ -14,7 +14,7 @@ public class Destroyer : MonoBehaviour
         {
             GameObject newCol = Instantiate(col, transform);
             newCol.tag = "destroyChecker";
-            newCol.transform.position = new Vector2 (-0.35f, -4.0f + 0.5f*i);
+            newCol.transform.position = new Vector2 (-0.35f, -4.0f + 0.5f*i-0.25f);
         }
         blockCounters = new List<BlockCounter>();
         for(int i = 0; i < this.transform.childCount; i++)
