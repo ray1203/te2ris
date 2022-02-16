@@ -87,10 +87,6 @@ public class player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "ground")
-        {
-            GetComponent<player>().canjump = 1;
-        }
         
         if (collision.gameObject.tag == "goalLine")
         {

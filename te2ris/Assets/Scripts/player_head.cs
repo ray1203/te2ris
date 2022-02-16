@@ -17,7 +17,7 @@ public class player_head : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("충돌");
+        
         if(collision.gameObject.tag =="block")
         {
             Debug.Log("플레이어 사망");
