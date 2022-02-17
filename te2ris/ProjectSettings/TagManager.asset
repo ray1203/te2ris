@@ -11,6 +11,7 @@ TagManager:
   - stageBtn
   - goalLine
   - wall
+  - overLine
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - Water
   - UI
   - text
-  - 
+  - overLine
   - 
   - 
   - 
