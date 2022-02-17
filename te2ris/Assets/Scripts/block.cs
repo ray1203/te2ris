@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class block : MonoBehaviour
 {
+    public GameObject fail;
     [SerializeField]
+    
     public float speed;
     public AudioClip clip;
   
@@ -65,6 +69,7 @@ public class block : MonoBehaviour
         SoundManager.instance.SFXPlay("dump", clip);
         FindObjectOfType<spawner>().destroy_preview();
         gameObject.tag = "ground";
+        gameObject.layer = 2;
         transform.GetChild(0).tag = "ground";
         transform.GetChild(0).GetComponent<pixel>().flag = 0;
         transform.GetChild(1).tag = "ground";
@@ -74,5 +79,15 @@ public class block : MonoBehaviour
         transform.GetChild(3).tag = "ground";
         transform.GetChild(3).GetComponent<pixel>().flag = 0;
         FindObjectOfType<spawner>().new_teromino();
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "overLine" && this.gameObject.tag=="ground")
+        {
+            Debug.Log("오버라인");
+            fail.SetActive(true);
+            Time.timeScale = 0f;
+        }
     }
 }
