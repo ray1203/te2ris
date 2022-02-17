@@ -108,7 +108,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1112, y: 1.11}
+  m_Size: {x: 1.11, y: 1.11}
   m_EdgeRadius: 0
 --- !u!114 &1052788159605377552
 MonoBehaviour:
@@ -232,7 +232,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1112, y: 1.11}
+  m_Size: {x: 1.11, y: 1.11}
   m_EdgeRadius: 0
 --- !u!114 &7163729505054412249
 MonoBehaviour:
@@ -356,7 +356,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1112, y: 1.11}
+  m_Size: {x: 1.11, y: 1.11}
   m_EdgeRadius: 0
 --- !u!114 &5638943434360774464
 MonoBehaviour:
@@ -480,7 +480,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1112, y: 1.11}
+  m_Size: {x: 1.11, y: 1.11}
   m_EdgeRadius: 0
 --- !u!114 &6020162414184458216
 MonoBehaviour:
@@ -507,6 +507,7 @@ GameObject:
   - component: {fileID: 7455270258939333771}
   - component: {fileID: 7455270258939333813}
   - component: {fileID: 7455270258939333770}
+  - component: {fileID: -3419888332635692178}
   m_Layer: 0
   m_Name: "I\uBE14\uB85D"
   m_TagString: block
@@ -567,3 +568,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   clip: {fileID: 8300000, guid: 7f79857b28c5749218674d1994791213, type: 3}
+--- !u!66 &-3419888332635692178
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7455270258939333768}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths: []
+  m_CompositePaths:
+    m_Paths: []
+  m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.00005
