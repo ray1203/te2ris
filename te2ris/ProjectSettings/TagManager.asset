@@ -18,7 +18,7 @@ TagManager:
   - goalLine
   - Water
   - UI
-  - 
+  - text
   - 
   - 
   - 
@@ -45,11 +45,14 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: background
+    uniqueID: 1372347247
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: background
-    uniqueID: 1372347247
+  - name: text
+    uniqueID: 979773115
     locked: 0
   - name: etc
     uniqueID: 2573856743
