@@ -20,7 +20,7 @@ public class player_head : MonoBehaviour
         
         if(collision.gameObject.tag =="block")
         {
-            Debug.Log("ÇÃ·¹ÀÌ¾î »ç¸Á");
+            Debug.Log("ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½");
         }
     }
 }

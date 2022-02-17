@@ -93,17 +93,13 @@ public class player : MonoBehaviour
         }
     }
 
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        
-        if (collision.gameObject.tag == "goalLine")
+    private void OnTriggerEnter2D(Collider2D other) {
+        if (other.gameObject.tag == "goalLine")
         {
             Debug.Log("골라인");
             clear.SetActive(true);
             GameObject.Find("StageData").GetComponent<StageSave>().SaveData();
             Time.timeScale = 0f;
         }
-
     }
 }
