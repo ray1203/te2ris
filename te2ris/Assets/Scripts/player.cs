@@ -91,7 +91,6 @@ public class player : MonoBehaviour
             
             SoundManager.instance.SFXPlay("jump", clip);
         }
-        canjump = 1;
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
