@@ -5707,7 +5707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisScene: 
-  timerTxt: {fileID: 0}
+  timerTxt: {fileID: 100928749}
   fail: {fileID: 383856232}
   time: 200
 --- !u!114 &1112297537
