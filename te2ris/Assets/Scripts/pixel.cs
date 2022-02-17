@@ -56,4 +56,11 @@ public class pixel : MonoBehaviour
             gameObject.GetComponentInParent<block>().set_ground();
         }
     }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "ground" && flag == 1)
+        {
+            gameObject.GetComponentInParent<block>().set_ground();
+        }
+    }
 }
