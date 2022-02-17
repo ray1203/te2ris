@@ -26,39 +26,55 @@ public class StageBtnCont : MonoBehaviour
     {
         stageData.GetComponent<StageSave>().currentStage = 1;
         DontDestroyOnLoad(stageData);
-        SceneManager.LoadScene("stage1");
+        SceneManager.LoadScene("stage1_1");
     }
     public void Stage2_Selected()
     {
-        SceneManager.LoadScene("GameScene");
+        stageData.GetComponent<StageSave>().currentStage = 2;
+        DontDestroyOnLoad(stageData);
+        SceneManager.LoadScene("stage1_2");
     }
     public void Stage3_Selected()
     {
-        SceneManager.LoadScene("GameScene");
+        stageData.GetComponent<StageSave>().currentStage = 3;
+        DontDestroyOnLoad(stageData);
+        SceneManager.LoadScene("stage1_3");
     }
     public void Stage4_Selected()
     {
-        SceneManager.LoadScene("GameScene");
+        stageData.GetComponent<StageSave>().currentStage = 4;
+        DontDestroyOnLoad(stageData);
+        SceneManager.LoadScene("stage2_1");
     }
     public void Stage5_Selected()
     {
-        SceneManager.LoadScene("GameScene");
+        stageData.GetComponent<StageSave>().currentStage = 5;
+        DontDestroyOnLoad(stageData);
+        SceneManager.LoadScene("stage2_2");
     }
     public void Stage6_Selected()
     {
-        SceneManager.LoadScene("GameScene");
+        stageData.GetComponent<StageSave>().currentStage = 6;
+        DontDestroyOnLoad(stageData);
+        SceneManager.LoadScene("stage2_3");
     }
     public void Stage7_Selected()
     {
-        SceneManager.LoadScene("GameScene");
+        stageData.GetComponent<StageSave>().currentStage = 7;
+        DontDestroyOnLoad(stageData);
+        SceneManager.LoadScene("stage3_1");;
     }
     public void Stage8_Selected()
     {
-        SceneManager.LoadScene("GameScene");
+        stageData.GetComponent<StageSave>().currentStage = 8;
+        DontDestroyOnLoad(stageData);
+        SceneManager.LoadScene("stage3_2");
     }
     public void Stage9_Selected()
     {
-        SceneManager.LoadScene("GameScene");
+        stageData.GetComponent<StageSave>().currentStage = 9;
+        DontDestroyOnLoad(stageData);
+        SceneManager.LoadScene("stage3_3");
     }
 
 }

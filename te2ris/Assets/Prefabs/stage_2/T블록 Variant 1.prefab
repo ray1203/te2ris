@@ -65,7 +65,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6548980826950094919, guid: 91e3b6710cbdd3e448574b1bf971cc49, type: 3}
       propertyPath: m_Name
-      value: "T\uBE14\uB85D"
+      value: "T\uBE14\uB85D Variant 1"
       objectReference: {fileID: 0}
     - target: {fileID: 6548980827508503400, guid: 91e3b6710cbdd3e448574b1bf971cc49, type: 3}
       propertyPath: m_Sprite
@@ -90,7 +90,7 @@ PrefabInstance:
     - target: {fileID: 6548980827910578905, guid: 91e3b6710cbdd3e448574b1bf971cc49, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 4b6f722da06d2cc44908c9fede8471d9, type: 3}
+      objectReference: {fileID: 21300000, guid: c75fb250511e7864aae723a0719335a9, type: 3}
     - target: {fileID: 6548980827996675917, guid: 91e3b6710cbdd3e448574b1bf971cc49, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1.2

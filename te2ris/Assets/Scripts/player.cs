@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class player : MonoBehaviour
 {
     public GameObject clear;
@@ -10,7 +10,7 @@ public class player : MonoBehaviour
     public int canjump = 1;                //���� ���ɿ��θ� ��Ÿ���� ����
     public AudioClip clip;
     Rigidbody2D myrigid;                    //������ٵ� �������� ����
-
+    private bool iceMap = false;
     //animation
     SpriteRenderer spriteRenderer;
     Animator animator;
@@ -22,6 +22,7 @@ public class player : MonoBehaviour
         myrigid = GetComponent<Rigidbody2D>();              //������ٵ� ������
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        if (SceneManager.GetActiveScene().name.Contains("stage3")) iceMap = true;
     }
 
 
@@ -43,12 +44,20 @@ public class player : MonoBehaviour
                 pos.x -= Time.deltaTime * speed;
                 spriteRenderer.flipX = false;
                 animator.SetBool("walk", true);
+                if (iceMap)
+                {
+                    GetComponent<Rigidbody2D>().velocity = new Vector2(-0.5f, 0);
+                }
             }
             if (Input.GetKey(KeyCode.RightArrow))
             {
                 pos.x += Time.deltaTime * speed;
                 spriteRenderer.flipX = true;
                 animator.SetBool("walk", true);
+                if (iceMap)
+                {
+                    GetComponent<Rigidbody2D>().velocity = new Vector2(0.5f, 0);
+                }
             }
         }
         else
@@ -97,5 +106,4 @@ public class player : MonoBehaviour
         }
 
     }
-
 }

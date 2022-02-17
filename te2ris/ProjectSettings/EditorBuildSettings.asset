@@ -6,12 +6,36 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: df83956f59924ca4e9b9658db06e9693
+  - enabled: 1
     path: Assets/Scenes/StageSelect.unity
     guid: 551998e095f62054fbfcaa5ab46a74df
   - enabled: 1
-    path: Assets/Scenes/stage/stage1.unity
+    path: Assets/Scenes/stage/stage1_1.unity
     guid: 6816a3bcef997694c9b8b0cc30b050be
   - enabled: 1
-    path: Assets/Scenes/Start.unity
-    guid: df83956f59924ca4e9b9658db06e9693
+    path: Assets/Scenes/stage/stage1_2.unity
+    guid: 142a976388a867545ab483892da7708b
+  - enabled: 1
+    path: Assets/Scenes/stage/stage1_3.unity
+    guid: d966c37896e3e8c4293bff5a5f2d8429
+  - enabled: 1
+    path: Assets/Scenes/stage/stage2_1.unity
+    guid: a1ea87e91343ade43ac50309582171ca
+  - enabled: 1
+    path: Assets/Scenes/stage/stage2_2.unity
+    guid: 8d1f636406b0ba04b8464e639b33a7cc
+  - enabled: 1
+    path: Assets/Scenes/stage/stage2_3.unity
+    guid: e04b9d525e0ef4f488f277cf89380a0b
+  - enabled: 1
+    path: Assets/Scenes/stage/stage3_1.unity
+    guid: 243b8f213e2006248999dc555e6fe8b7
+  - enabled: 1
+    path: Assets/Scenes/stage/stage3_2.unity
+    guid: ddd71076ce0ceb943a6025f4ab92bdae
+  - enabled: 1
+    path: Assets/Scenes/stage/stage3_3.unity
+    guid: 42a7e4757b29f284f9f42aeb6b923fba
   m_configObjects: {}
