@@ -15,7 +15,8 @@ public class player_foot : MonoBehaviour
     {
         
     }
-   private void OnTriggerEnter2D(Collider2D other) {
+
+    private void OnTriggerEnter2D(Collider2D other) {
         if(other.gameObject.tag=="ground")
         {
             FindObjectOfType<player>().canjump = 1;
