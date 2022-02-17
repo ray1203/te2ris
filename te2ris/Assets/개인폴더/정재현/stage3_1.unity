@@ -1316,6 +1316,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 937913850438808750, guid: 12ce31a77869906479a7d5af19812d44, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 4814f59537c0cf64085104a4f3737bf0, type: 2}
+    - target: {fileID: 937913850438808751, guid: 12ce31a77869906479a7d5af19812d44, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 4814f59537c0cf64085104a4f3737bf0, type: 2}
     - target: {fileID: 2372487811500137803, guid: 12ce31a77869906479a7d5af19812d44, type: 3}
       propertyPath: m_Layer
       value: 2
