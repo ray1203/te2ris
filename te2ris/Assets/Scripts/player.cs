@@ -87,7 +87,7 @@ public class player : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && canjump==1)              //Ű�� ������ ���� ������ ������ ���
         {
             myrigid.velocity = Vector2.up*power;                    //������� ���� ����
-            canjump = 0;                                           //�����Ұ�� ���� �Ұ� ���°� ��
+                                  
             
             SoundManager.instance.SFXPlay("jump", clip);
         }
@@ -100,6 +100,13 @@ public class player : MonoBehaviour
             clear.SetActive(true);
             GameObject.Find("StageData").GetComponent<StageSave>().SaveData();
             Time.timeScale = 0f;
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "ground")
+        {
+            canjump = 0;
         }
     }
 }
