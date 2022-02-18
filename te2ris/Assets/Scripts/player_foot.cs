@@ -22,4 +22,11 @@ public class player_foot : MonoBehaviour
             FindObjectOfType<player>().canjump = 1;
         }
     }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "ground")
+        {
+            FindObjectOfType<player>().canjump = 0;
+        }
+    }
 }

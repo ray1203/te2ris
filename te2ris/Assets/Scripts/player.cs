@@ -87,9 +87,6 @@ public class player : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && canjump==1)              //Ű�� ������ ���� ������ ������ ���
         {
             myrigid.velocity = Vector2.up*power;                    //������� ���� ����
-           
-                canjump = 0;
-            
             SoundManager.instance.SFXPlay("jump", clip);
         }
     }
