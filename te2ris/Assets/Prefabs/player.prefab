@@ -171,7 +171,7 @@ GameObject:
   - component: {fileID: 4017982562717190575}
   - component: {fileID: 178455401296566204}
   - component: {fileID: 618078870598823255}
-  - component: {fileID: 2232235477435739719}
+  - component: {fileID: 2897329664372157734}
   m_Layer: 2
   m_Name: player foot
   m_TagString: Untagged
@@ -256,8 +256,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a674bd1d33b3d14bb66d64b4267cc9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &2232235477435739719
-BoxCollider2D:
+  obj: {fileID: 937913850438808748}
+--- !u!58 &2897329664372157734
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -269,16 +270,6 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0033119991, y: -0.32452202}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0, y: -0.3}
   serializedVersion: 2
-  m_Size: {x: 0.16957451, y: 0.016289592}
-  m_EdgeRadius: 0
+  m_Radius: 0.11

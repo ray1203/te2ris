@@ -88,6 +88,7 @@ public class player : MonoBehaviour
         {
             myrigid.velocity = Vector2.up*power;                    //������� ���� ����
             SoundManager.instance.SFXPlay("jump", clip);
+            //canjump = 0;
         }
     }
 

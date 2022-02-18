@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5822984765792012570}
   - component: {fileID: 176566050338806028}
   - component: {fileID: 1052788159605377552}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: block_2
   m_TagString: block
   m_Icon: {fileID: 0}
@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 5569979342955378970}
   - component: {fileID: 3693700527542676733}
   - component: {fileID: 7163729505054412249}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: block_1
   m_TagString: block
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 824926769326294304}
   - component: {fileID: 3555271863376128814}
   - component: {fileID: 5638943434360774464}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: block_3
   m_TagString: block
   m_Icon: {fileID: 0}
@@ -384,7 +384,7 @@ GameObject:
   - component: {fileID: 3912489720483809344}
   - component: {fileID: 2492951046390594695}
   - component: {fileID: 6020162414184458216}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: block_4
   m_TagString: block
   m_Icon: {fileID: 0}
@@ -507,7 +507,7 @@ GameObject:
   - component: {fileID: 7455270258939333771}
   - component: {fileID: 7455270258939333813}
   - component: {fileID: 7455270258939333770}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: "I\uBE14\uB85D"
   m_TagString: block
   m_Icon: {fileID: 0}
