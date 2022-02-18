@@ -46,7 +46,7 @@ public class player : MonoBehaviour
                 animator.SetBool("walk", true);
                 if (iceMap)
                 {
-                    GetComponent<Rigidbody2D>().velocity = new Vector2(-0.5f, 0);
+                    GetComponent<Rigidbody2D>().velocity = new Vector2(-0.5f, GetComponent<Rigidbody2D>().velocity.y);
                 }
             }
             if (Input.GetKey(KeyCode.RightArrow))
@@ -56,7 +56,7 @@ public class player : MonoBehaviour
                 animator.SetBool("walk", true);
                 if (iceMap)
                 {
-                    GetComponent<Rigidbody2D>().velocity = new Vector2(0.5f, 0);
+                    GetComponent<Rigidbody2D>().velocity = new Vector2(0.5f, GetComponent<Rigidbody2D>().velocity.y);
                 }
             }
         }

@@ -3374,6 +3374,7 @@ GameObject:
   - component: {fileID: 671225836}
   - component: {fileID: 671225839}
   - component: {fileID: 671225838}
+  - component: {fileID: 671225840}
   - component: {fileID: 671225837}
   m_Layer: 0
   m_Name: ground
@@ -3452,7 +3453,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3519,6 +3520,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &671225840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671225835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f463d2589a19d694f8ff78723e39befe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &678407864
 GameObject:
   m_ObjectHideFlags: 0
