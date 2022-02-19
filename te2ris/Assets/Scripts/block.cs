@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class block : MonoBehaviour
 {   
     Rigidbody2D myrigid;
-    public GameObject fail;
+    public GameObject failpage;
     [SerializeField]
     
     public float speed;
@@ -92,8 +92,8 @@ public class block : MonoBehaviour
         if (other.gameObject.tag == "overLine" && this.gameObject.tag=="ground")
         {
             Debug.Log("오버라인");
-            fail.SetActive(true);
-            Time.timeScale = 0f;
+            failPageOn();
+            
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -102,5 +102,12 @@ public class block : MonoBehaviour
         {
             myrigid.velocity = Vector2.right * 10;
         }
+    }
+
+    public void failPageOn()
+    {
+        
+        GameObject.Find("CanvasForFail").transform.Find("FAIL").gameObject.SetActive(true);
+        Time.timeScale = 0f;
     }
 }
