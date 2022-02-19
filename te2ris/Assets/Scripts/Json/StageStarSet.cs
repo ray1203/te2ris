@@ -16,7 +16,7 @@ public class StageStarSet : MonoBehaviour
             {
                 GameObject newObject = Instantiate(star);
                 newObject.GetComponent<Image>().sprite = star1;
-                newObject.transform.parent = transform.Find("Stage" + i);
+                newObject.transform.SetParent (transform.Find("Stage" + i));
                 newObject.transform.localScale = new Vector3(1, 1, 1);
                 newObject.transform.localPosition = new Vector2(0, 24);
             }
@@ -24,7 +24,7 @@ public class StageStarSet : MonoBehaviour
             {
                 GameObject newObject = Instantiate(star);
                 newObject.GetComponent<Image>().sprite = star2;
-                newObject.transform.parent = transform.Find("Stage" + i);
+                newObject.transform.SetParent(transform.Find("Stage" + i));
                 newObject.transform.localScale = new Vector3(1, 1, 1);
                 newObject.transform.localPosition = new Vector2(0, 24);
             }
@@ -32,7 +32,7 @@ public class StageStarSet : MonoBehaviour
             {
                 GameObject newObject = Instantiate(star);
                 newObject.GetComponent<Image>().sprite = star3;
-                newObject.transform.parent = transform.Find("Stage" + i);
+                newObject.transform.SetParent (transform.Find("Stage" + i));
                 newObject.transform.localScale = new Vector3(1, 1, 1);
                 newObject.transform.localPosition = new Vector2(0, 24);
             }
@@ -40,7 +40,7 @@ public class StageStarSet : MonoBehaviour
             {
                 GameObject newObject = Instantiate(big_star);
                 newObject.GetComponent<Image>().sprite = star4;
-                newObject.transform.parent = transform.Find("Stage" + i);
+                newObject.transform.SetParent(transform.Find("Stage" + i));
                 newObject.transform.localScale = new Vector3(1, 1, 1);
                 newObject.transform.localPosition = new Vector2(0, 25);
             }
