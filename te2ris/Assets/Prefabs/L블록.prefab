@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9012739357155162705}
   - component: {fileID: 9012739357155162704}
   - component: {fileID: 75071221491507798}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: block_4
   m_TagString: block
   m_Icon: {fileID: 0}
@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 9012739357316868413}
   - component: {fileID: 9012739357316868412}
   - component: {fileID: 98067409658287872}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: block_2
   m_TagString: block
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 9012739357474758815}
   - component: {fileID: 9012739357474758814}
   - component: {fileID: 5082753950756306284}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: block_3
   m_TagString: block
   m_Icon: {fileID: 0}
@@ -383,7 +383,7 @@ GameObject:
   - component: {fileID: 9012739357984576043}
   - component: {fileID: 9012739357984576041}
   - component: {fileID: 9012739357984576040}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: "L\uBE14\uB85D"
   m_TagString: block
   m_Icon: {fileID: 0}
@@ -421,7 +421,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 5
-  m_LinearDrag: 0.4
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0.5
   m_Material: {fileID: 6200000, guid: acb013d337459c34f976b953509f38b7, type: 2}
@@ -456,7 +456,7 @@ GameObject:
   - component: {fileID: 9012739358373740618}
   - component: {fileID: 9012739358373740621}
   - component: {fileID: 7050217754233102886}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: block_1
   m_TagString: block
   m_Icon: {fileID: 0}

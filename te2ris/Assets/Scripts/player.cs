@@ -46,7 +46,7 @@ public class player : MonoBehaviour
                 animator.SetBool("walk", true);
                 if (iceMap)
                 {
-                    GetComponent<Rigidbody2D>().velocity = new Vector2(-0.5f, 0);
+                    GetComponent<Rigidbody2D>().velocity = new Vector2(-0.5f, GetComponent<Rigidbody2D>().velocity.y);
                 }
             }
             if (Input.GetKey(KeyCode.RightArrow))
@@ -56,7 +56,7 @@ public class player : MonoBehaviour
                 animator.SetBool("walk", true);
                 if (iceMap)
                 {
-                    GetComponent<Rigidbody2D>().velocity = new Vector2(0.5f, 0);
+                    GetComponent<Rigidbody2D>().velocity = new Vector2(0.5f, GetComponent<Rigidbody2D>().velocity.y);
                 }
             }
         }
@@ -87,9 +87,8 @@ public class player : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && canjump==1)              //Ű�� ������ ���� ������ ������ ���
         {
             myrigid.velocity = Vector2.up*power;                    //������� ���� ����
-            canjump = 0;                                           //�����Ұ�� ���� �Ұ� ���°� ��
-            
             SoundManager.instance.SFXPlay("jump", clip);
+            //canjump = 0;
         }
     }
 
@@ -102,4 +101,5 @@ public class player : MonoBehaviour
             Time.timeScale = 0f;
         }
     }
+   
 }

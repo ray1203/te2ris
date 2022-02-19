@@ -5,13 +5,19 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class block : MonoBehaviour
-{
+{   
+    Rigidbody2D myrigid;
     public GameObject fail;
     [SerializeField]
     
     public float speed;
     public AudioClip clip;
-  
+
+
+    private void Start()
+    {
+        myrigid = GetComponent<Rigidbody2D>();
+    }
     void Update()
     {
         if (transform.childCount == 0)
@@ -88,6 +94,13 @@ public class block : MonoBehaviour
             Debug.Log("오버라인");
             fail.SetActive(true);
             Time.timeScale = 0f;
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag =="spring")
+        {
+            myrigid.velocity = Vector2.right * 10;
         }
     }
 }

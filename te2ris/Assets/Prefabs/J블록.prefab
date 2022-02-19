@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4112639144184216673}
   - component: {fileID: 4112639144184216674}
   - component: {fileID: 3024403507029141218}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: block_1
   m_TagString: block
   m_Icon: {fileID: 0}
@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 4112639144423912663}
   - component: {fileID: 4112639144423912664}
   - component: {fileID: 7425578746380538738}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: block_3
   m_TagString: block
   m_Icon: {fileID: 0}
@@ -259,7 +259,7 @@ GameObject:
   - component: {fileID: 4112639144793776274}
   - component: {fileID: 4112639144793776272}
   - component: {fileID: 4112639144793776273}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: "J\uBE14\uB85D"
   m_TagString: block
   m_Icon: {fileID: 0}
@@ -297,7 +297,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 5
-  m_LinearDrag: 0.4
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0.5
   m_Material: {fileID: 6200000, guid: acb013d337459c34f976b953509f38b7, type: 2}
@@ -332,7 +332,7 @@ GameObject:
   - component: {fileID: 4112639145588142064}
   - component: {fileID: 4112639145588142065}
   - component: {fileID: 6323798141119022091}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: block_2
   m_TagString: block
   m_Icon: {fileID: 0}
@@ -456,7 +456,7 @@ GameObject:
   - component: {fileID: 4112639145642719003}
   - component: {fileID: 4112639145642719004}
   - component: {fileID: 5121906416385700554}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: block_4
   m_TagString: block
   m_Icon: {fileID: 0}

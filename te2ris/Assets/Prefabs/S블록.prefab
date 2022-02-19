@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5351154885055224074}
   - component: {fileID: 5351154885055224075}
   - component: {fileID: 8258364908626379403}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: block_4
   m_TagString: block
   m_Icon: {fileID: 0}
@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 5351154885123393332}
   - component: {fileID: 5351154885123393333}
   - component: {fileID: 9091852952306918587}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: block_3
   m_TagString: block
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 5351154885907763803}
   - component: {fileID: 5351154885907763800}
   - component: {fileID: 2256639219611412505}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: block_2
   m_TagString: block
   m_Icon: {fileID: 0}
@@ -383,7 +383,7 @@ GameObject:
   - component: {fileID: 5351154885942057308}
   - component: {fileID: 5351154885942057311}
   - component: {fileID: 5351154885942057310}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: "S\uBE14\uB85D"
   m_TagString: block
   m_Icon: {fileID: 0}
@@ -421,7 +421,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 5
-  m_LinearDrag: 0.4
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0.5
   m_Material: {fileID: 6200000, guid: acb013d337459c34f976b953509f38b7, type: 2}
@@ -456,7 +456,7 @@ GameObject:
   - component: {fileID: 5351154886059936458}
   - component: {fileID: 5351154886059936459}
   - component: {fileID: 1396763594178562802}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: block_1
   m_TagString: block
   m_Icon: {fileID: 0}

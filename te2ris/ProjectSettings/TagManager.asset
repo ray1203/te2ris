@@ -12,6 +12,7 @@ TagManager:
   - goalLine
   - wall
   - overLine
+  - spring
   layers:
   - Default
   - TransparentFX
