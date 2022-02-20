@@ -2767,7 +2767,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1891712864}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1308107379
 GameObject:
@@ -3829,51 +3829,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1609391086}
   m_CullTransparentMesh: 1
---- !u!1 &1627676084
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1627676085}
-  - component: {fileID: 1627676086}
-  m_Layer: 0
-  m_Name: destroyer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1627676085
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1627676084}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.56288964, y: -0.62, z: -41625.805}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1891712864}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1627676086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1627676084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae6ccf4005e5bc54e965710097b05ab0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  col: {fileID: 1833853734300794100, guid: 8a02add8966bb4b41a8828a6f3e0a4dc, type: 3}
-  clip: {fileID: 8300000, guid: 894f272ebb11242af94879907071b1b6, type: 3}
 --- !u!1 &1709773907
 GameObject:
   m_ObjectHideFlags: 0
@@ -4093,7 +4048,7 @@ Transform:
   - {fileID: 625312955}
   - {fileID: 1720441029}
   m_Father: {fileID: 1891712864}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1752179761
 GameObject:
@@ -4383,7 +4338,6 @@ Transform:
   m_Children:
   - {fileID: 865253299}
   - {fileID: 1757109863}
-  - {fileID: 1627676085}
   - {fileID: 1725016966}
   - {fileID: 1256802312}
   m_Father: {fileID: 0}

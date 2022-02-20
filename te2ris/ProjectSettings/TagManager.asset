@@ -65,6 +65,9 @@ TagManager:
   - name: block
     uniqueID: 903114665
     locked: 0
-  - name: UI
+  - name: UI_1
     uniqueID: 1066326977
+    locked: 0
+  - name: UI
+    uniqueID: 1152646333
     locked: 0

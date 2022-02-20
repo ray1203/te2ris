@@ -26,7 +26,7 @@ public class MovingGround : MonoBehaviour
     {
         if (collision.GetComponentInParent<block>() != null)
         {
-            collision.transform.parent.position = collision.transform.parent.position - new Vector3(0f, 0.009f*Time.deltaTime);
+            collision.transform.parent.position = collision.transform.parent.position - new Vector3(0f, 0.008f*Time.deltaTime);
         }
 
     }
