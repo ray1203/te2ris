@@ -8,15 +8,15 @@ public class StageSave : MonoBehaviour
     public int currentStage = 0;
     TimeLimit[] timeLimits = new TimeLimit[10] {//각 스테이지 제한시간 저장
             new TimeLimit(0, 0, 0),
-            new TimeLimit(180, 120, 60),
-            new TimeLimit(180, 120, 60),
-            new TimeLimit(180, 120, 60),
-            new TimeLimit(120, 90, 60),
-            new TimeLimit(120, 90, 60),
-            new TimeLimit(120, 90, 60),
-            new TimeLimit(90, 70, 50),
-            new TimeLimit(90, 70, 50),
-            new TimeLimit(90, 70, 50),
+            new TimeLimit(90, 75, 60),
+            new TimeLimit(105, 90, 75),
+            new TimeLimit(120, 105, 90),
+            new TimeLimit(90, 75, 60),
+            new TimeLimit(105, 90, 75),
+            new TimeLimit(120, 105, 90),
+            new TimeLimit(90, 75, 60),
+            new TimeLimit(105, 90, 75),
+            new TimeLimit(120, 105, 90)
         };
     // Start is called before the first frame update
     void Start()
@@ -72,20 +72,8 @@ public class StageSave : MonoBehaviour
     }
     public void FirstSetting()
     {
-        TimeLimit[] timeLimits = new TimeLimit[10] {//각 스테이지 제한시간 저장
-            new TimeLimit(0, 0, 0),
-            new TimeLimit(180, 120, 60),
-            new TimeLimit(180, 120, 60),
-            new TimeLimit(180, 120, 60),
-            new TimeLimit(120, 90, 60),
-            new TimeLimit(120, 90, 60),
-            new TimeLimit(120, 90, 60),
-            new TimeLimit(90, 70, 50),
-            new TimeLimit(90, 70, 50),
-            new TimeLimit(90, 70, 50),
-        };
         int[] clearAmount = new int[10] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-        StageData stageData = new StageData(clearAmount, timeLimits);
+        StageData stageData = new StageData(clearAmount);
         string str = ObjectToJson(stageData);
         CreateJsonFile(Application.dataPath, "StageData", str);
 
@@ -94,19 +82,19 @@ public class StageSave : MonoBehaviour
     {
         int stage = currentStage;
         int star = 0;
-        int curTime =(int)GameObject.Find("SidePlace").GetComponent<Timer>().time;
-        if (curTime < timeLimits[stage].limit3)
-        {
-            star = 1;
-        }else if (curTime < timeLimits[stage].limit2 && curTime >= timeLimits[stage].limit3)
-        {
-            star = 2;
-        }else if (curTime < timeLimits[stage].limit1&&curTime>=timeLimits[stage].limit2)
+        int curTime =200-(int)GameObject.Find("SidePlace").GetComponent<Timer>().time;
+        if (curTime <= timeLimits[stage].limit3)
         {
             star = 3;
-        }else if (curTime >= timeLimits[stage].limit1)
+        }else if (curTime <= timeLimits[stage].limit2 && curTime > timeLimits[stage].limit3)
         {
-            star = 4;
+            star = 2;
+        }else if (curTime <= timeLimits[stage].limit1&&curTime>timeLimits[stage].limit2)
+        {
+            star = 1;
+        }else
+        {
+            star = 4;//4== 별 1,2,3개도 못 얻고 깨기만 함
         }
         StageData stageData = LoadJsonFile<StageData>(Application.dataPath, "StageData");
         stageData.clearAmount[stage] = stageData.clearAmount[stage] < star ? star : stageData.clearAmount[stage];
@@ -125,19 +113,9 @@ public class StageSave : MonoBehaviour
         StageData stageData = LoadJsonFile<StageData>(Application.dataPath, "StageData");
         return stageData.clearAmount[stage];
     }
-    public TimeLimit GetTimeLimit(int stage)
-    {
-        StageData stageData = LoadJsonFile<StageData>(Application.dataPath, "StageData");
-        return stageData.timeLimits[stage];
-    }
     public int[] GetAllStars()
     {
         StageData stageData = LoadJsonFile<StageData>(Application.dataPath, "StageData");
         return stageData.clearAmount;
-    }
-    public TimeLimit[] GetAllTimeLimits()
-    {
-        StageData stageData = LoadJsonFile<StageData>(Application.dataPath, "StageData");
-        return stageData.timeLimits;
     }
 }

@@ -41,7 +41,7 @@ public class StageStarSet : MonoBehaviour
                 GameObject newObject = Instantiate(big_star);
                 newObject.GetComponent<Image>().sprite = star4;
                 newObject.transform.SetParent(transform.Find("Stage" + i));
-                newObject.transform.localScale = new Vector3(1, 1, 1);
+                newObject.transform.localScale = new Vector3(0.5f, 0.5f, 1);
                 newObject.transform.localPosition = new Vector2(0, 25);
             }
         }
