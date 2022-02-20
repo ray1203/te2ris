@@ -2254,7 +2254,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 132.99995, y: -63.999996}
+  m_AnchoredPosition: {x: 132.99994, y: -64}
   m_SizeDelta: {x: 600, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &547399139
@@ -3475,7 +3475,7 @@ MonoBehaviour:
   - {fileID: 2122967635355308333, guid: 613e07abb7c738c47b680a0742db8483, type: 3}
   - {fileID: 1685193249855885423, guid: f6db19e4ea6f2ad4f893eaab66c02f54, type: 3}
   - {fileID: 7178972593681217237, guid: 66e863965bfed864ebee0f243aa4fa2e, type: 3}
-  preview: {fileID: 0}
+  preview: {fileID: 1250623507}
   cur_block: 0
   pre_block: 0
 --- !u!4 &723753996
@@ -11020,7 +11020,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -156.00003, y: 172.80002}
+  m_AnchoredPosition: {x: -156.00006, y: 172.80002}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1250623509
@@ -12274,7 +12274,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8168509013227407210, guid: 6ffe66c16604de642be8bc56868e6bcb, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 132.99995
+      value: 132.99994
       objectReference: {fileID: 0}
     - target: {fileID: 8168509013227407210, guid: 6ffe66c16604de642be8bc56868e6bcb, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -12295,7 +12295,7 @@ PrefabInstance:
     - target: {fileID: 8168509013227407211, guid: 6ffe66c16604de642be8bc56868e6bcb, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: 06ec6820c773abb48838f5c32cd5c99a, type: 3}
+      objectReference: {fileID: 12800000, guid: fdb5737de65bbef4a82a974d7ac63a08, type: 3}
     - target: {fileID: 8168509013227407213, guid: 6ffe66c16604de642be8bc56868e6bcb, type: 3}
       propertyPath: m_Name
       value: Timer
@@ -12307,6 +12307,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8168509013227407210, guid: 6ffe66c16604de642be8bc56868e6bcb, type: 3}
   m_PrefabInstance: {fileID: 1493717085}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1493717087 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8168509013227407211, guid: 6ffe66c16604de642be8bc56868e6bcb, type: 3}
+  m_PrefabInstance: {fileID: 1493717085}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1505801943
 GameObject:
   m_ObjectHideFlags: 0
@@ -15175,8 +15186,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisScene: 
-  timerTxt: {fileID: 0}
-  fail: {fileID: 0}
+  timerTxt: {fileID: 1493717087}
+  fail: {fileID: 1381385360}
   time: 200
 --- !u!114 &1860004082
 MonoBehaviour:

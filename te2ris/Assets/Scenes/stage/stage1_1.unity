@@ -10964,7 +10964,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 06ec6820c773abb48838f5c32cd5c99a, type: 3}
+    m_Font: {fileID: 12800000, guid: fdb5737de65bbef4a82a974d7ac63a08, type: 3}
     m_FontSize: 100
     m_FontStyle: 1
     m_BestFit: 0
@@ -10973,7 +10973,7 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "\uBE14\uB7ED\uC744 \uC313\uC544 \uBAA9\uD45C\uC9C0\uC810\uAE4C\uC9C0 \uB3C4\uB2EC\uD558\uC138\uC694!"
@@ -18074,7 +18074,7 @@ PrefabInstance:
     - target: {fileID: 8168509013227407211, guid: 6ffe66c16604de642be8bc56868e6bcb, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: 06ec6820c773abb48838f5c32cd5c99a, type: 3}
+      objectReference: {fileID: 12800000, guid: fdb5737de65bbef4a82a974d7ac63a08, type: 3}
     - target: {fileID: 8168509013227407213, guid: 6ffe66c16604de642be8bc56868e6bcb, type: 3}
       propertyPath: m_Name
       value: Timer
