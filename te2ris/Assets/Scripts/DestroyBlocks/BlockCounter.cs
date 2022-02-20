@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class BlockCounter : MonoBehaviour
 {
-    private static Dictionary<int, bool> removeCheck;
     private List<GameObject> blocks;
     public int showCount;
 
     private void Awake()
     {
         blocks = new List<GameObject>();
-        removeCheck = new Dictionary<int, bool>();
     }
     private void Update()
     {
@@ -29,14 +27,6 @@ public class BlockCounter : MonoBehaviour
     public int getCount()
     {
         return blocks.Count;
-    }
-    public void clearArr()
-    {
-        for(int i = 0; i < blocks.Count; i++)
-        {
-            if(blocks[i]==null) blocks.Remove(blocks[i]);
-            if (removeCheck.ContainsKey(blocks[i].GetComponent<pixel>().id)) blocks.Remove(blocks[i]);
-        }
     }
     /*
     public void destroyBlocks()
@@ -80,7 +70,6 @@ public class BlockCounter : MonoBehaviour
         int count = destroyList.Count;
         for (int i = 0; i < count; i++)
         {
-            removeCheck.Add(destroyList[i].GetComponent<pixel>().id, true);
             Destroy(destroyList[i].gameObject);
             
         }

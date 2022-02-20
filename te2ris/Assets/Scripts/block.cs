@@ -98,7 +98,11 @@ public class block : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag =="spring")
+        if(collision.gameObject.tag =="left spring")
+        {
+            myrigid.velocity = Vector2.left * 10;
+        }
+        if (collision.gameObject.tag == "right spring")
         {
             myrigid.velocity = Vector2.right * 10;
         }

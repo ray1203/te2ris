@@ -3007,6 +3007,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisScene: 
   pauseMenu: {fileID: 1587834153}
+  gameoverMenu: {fileID: 0}
 --- !u!114 &558896859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5294,7 +5295,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 06ec6820c773abb48838f5c32cd5c99a, type: 3}
     m_FontSize: 80
     m_FontStyle: 1
     m_BestFit: 0
@@ -5652,6 +5653,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisScene: 
   pauseMenu: {fileID: 1587834153}
+  gameoverMenu: {fileID: 54509588}
 --- !u!81 &1049393811
 AudioListener:
   m_ObjectHideFlags: 0
@@ -8898,6 +8900,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisScene: 
   pauseMenu: {fileID: 1587834153}
+  gameoverMenu: {fileID: 0}
 --- !u!114 &1587834155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9038,7 +9041,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 06ec6820c773abb48838f5c32cd5c99a, type: 3}
     m_FontSize: 80
     m_FontStyle: 1
     m_BestFit: 0
@@ -14582,6 +14585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisScene: 
   pauseMenu: {fileID: 1587834153}
+  gameoverMenu: {fileID: 0}
 --- !u!114 &1775648522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16626,6 +16630,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisScene: 
   pauseMenu: {fileID: 1587834153}
+  gameoverMenu: {fileID: 0}
 --- !u!114 &2104953555
 MonoBehaviour:
   m_ObjectHideFlags: 0

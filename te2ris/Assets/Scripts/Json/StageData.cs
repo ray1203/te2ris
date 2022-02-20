@@ -5,15 +5,12 @@ using UnityEngine;
 public class StageData
 {
     public int[] clearAmount;
-    public TimeLimit[] timeLimits;
     public StageData() { 
         clearAmount = new int[10];
-        timeLimits = new TimeLimit[10];
     }
-    public StageData(int[] clearAmount, TimeLimit[] timeLimits)
+    public StageData(int[] clearAmount)
     {
         this.clearAmount = clearAmount;
-        this.timeLimits = timeLimits;
     }
     
     public void print()

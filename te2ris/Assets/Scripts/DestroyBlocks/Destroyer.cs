@@ -34,8 +34,6 @@ public class Destroyer : MonoBehaviour
                 blockCounters[i].StartCoroutine(blockCounters[i].destroyBlocks());
             }
         }
-        for (int i = 0; i < blockCounters.Count; i++)
-            blockCounters[i].clearArr();
     }
     // Update is called once per frame
     void Update()

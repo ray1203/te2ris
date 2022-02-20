@@ -1,7 +1,34 @@
 fileFormatVersion: 2
 guid: 56277bcdce0862044b901f721c7b9459
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 7672076728833118590
+    second: BackTile_15_0
+  - first:
+      213: -456167789210630281
+    second: BackTile_15_1
+  - first:
+      213: -8692550459105303655
+    second: BackTile_15_2
+  - first:
+      213: -7114817237368372349
+    second: BackTile_15_3
+  - first:
+      213: -6466582809143858550
+    second: BackTile_15_4
+  - first:
+      213: -6615962527335716478
+    second: BackTile_15_5
+  - first:
+      213: 2375746274202624872
+    second: BackTile_15_6
+  - first:
+      213: -1212980180784872251
+    second: BackTile_15_7
+  - first:
+      213: 7883480354766653302
+    second: BackTile_15_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +68,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,7 +140,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: BackTile_15_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 170.66666
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7193afe221b87a60800000000000000
+      internalID: 7672076728833118590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackTile_15_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 170.66666
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 777002600dd5ba9f0800000000000000
+      internalID: -456167789210630281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackTile_15_2
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 170.66666
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 993aedc996bdd5780800000000000000
+      internalID: -8692550459105303655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackTile_15_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 85.666664
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38305d42b67134d90800000000000000
+      internalID: -7114817237368372349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackTile_15_4
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 85.666664
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8a255e42351246a0800000000000000
+      internalID: -6466582809143858550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackTile_15_5
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 85.666664
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 289ebde52216f24a0800000000000000
+      internalID: -6615962527335716478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackTile_15_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.6666641
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8632e4e26a858f020800000000000000
+      internalID: 2375746274202624872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackTile_15_7
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 0.6666641
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c48ab4c3f0aa2fe0800000000000000
+      internalID: -1212980180784872251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackTile_15_8
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 0.6666641
+        width: 85.333336
+        height: 85.333336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67703ab3d9fb76d60800000000000000
+      internalID: 7883480354766653302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

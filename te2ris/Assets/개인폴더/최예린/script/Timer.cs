@@ -17,7 +17,7 @@ public class Timer : MonoBehaviour
         
         selectCountdown = time;
         thisScene = SceneManager.GetActiveScene().name;
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
     }
 
     void Update()
