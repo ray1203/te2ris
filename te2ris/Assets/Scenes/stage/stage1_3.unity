@@ -3286,7 +3286,7 @@ GameObject:
   - component: {fileID: 622452582}
   m_Layer: 0
   m_Name: block
-  m_TagString: ground
+  m_TagString: thorn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4033,7 +4033,7 @@ GameObject:
   - component: {fileID: 789997172}
   m_Layer: 0
   m_Name: block (1)
-  m_TagString: ground
+  m_TagString: thorn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6197,7 +6197,7 @@ GameObject:
   - component: {fileID: 1137714613}
   m_Layer: 0
   m_Name: obj
-  m_TagString: Untagged
+  m_TagString: thorn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6377,7 +6377,7 @@ GameObject:
   - component: {fileID: 1185501923}
   m_Layer: 0
   m_Name: block (4)
-  m_TagString: ground
+  m_TagString: thorn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8606,7 +8606,7 @@ GameObject:
   - component: {fileID: 1529663169}
   m_Layer: 0
   m_Name: block (3)
-  m_TagString: ground
+  m_TagString: thorn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14205,7 +14205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisScene: 
-  timerTxt: {fileID: 0}
+  timerTxt: {fileID: 999685123}
   fail: {fileID: 54509588}
   time: 100
 --- !u!114 &1666167303
@@ -14775,7 +14775,7 @@ GameObject:
   - component: {fileID: 1789729446}
   m_Layer: 0
   m_Name: block (2)
-  m_TagString: ground
+  m_TagString: thorn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16315,7 +16315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisScene: 
-  timerTxt: {fileID: 0}
+  timerTxt: {fileID: 999685123}
   fail: {fileID: 54509588}
   time: 100
 --- !u!114 &2057545847

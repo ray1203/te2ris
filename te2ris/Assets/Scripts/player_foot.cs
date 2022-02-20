@@ -21,4 +21,12 @@ public class player_foot : MonoBehaviour
             //FindObjectOfType<player>().canjump = 0;
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.tag == "thorn")
+        {
+            GameManager.instance.GameOver();
+        }
+    }
 }
