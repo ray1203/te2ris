@@ -13,6 +13,7 @@ public class block : MonoBehaviour
     public float speed;
     public AudioClip clip;
 
+    private int can_move = 1;
 
     private void Start()
     {
@@ -28,7 +29,12 @@ public class block : MonoBehaviour
         {
             move();
             rotate();
+            if (can_move == 0)
+            {
+                cannot_move();
+            }
         }
+       
         limit_move();
     }
 
@@ -54,7 +60,20 @@ public class block : MonoBehaviour
         }
         transform.position = pos;                       //���ο� ������ ����� ���� ���� ��ġ�� ����
     }
+    private void cannot_move()
+    {
+        Vector2 pos = transform.position;
+        if (Input.GetKey(KeyCode.A))                         //a������ 
+        {
+            pos.x += Time.deltaTime * speed;                   // �������� x ���� ��
 
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            pos.x -= Time.deltaTime * speed;
+        }
+        transform.position = pos;
+    }
 
     private void limit_move()
     {
@@ -101,17 +120,19 @@ public class block : MonoBehaviour
         if(collision.gameObject.tag =="left spring")
         {
             myrigid.velocity = Vector2.left * 10;
+            can_move = 0;
         }
         if (collision.gameObject.tag == "right spring")
         {
             myrigid.velocity = Vector2.right * 10;
+            can_move = 0;
         }
         if (collision.gameObject.tag == "spring")
         {
             myrigid.velocity = Vector2.up * 5;
         }
     }
-
+    
     public void failPageOn()
     {
         
