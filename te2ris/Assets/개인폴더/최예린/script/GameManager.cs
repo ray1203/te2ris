@@ -7,7 +7,12 @@ public class GameManager : MonoBehaviour
 {
     public string thisScene;
     public GameObject pauseMenu;
-
+    public static GameManager instance;
+    public GameObject gameoverMenu;
+    private void Awake()
+    {
+        instance = this;
+    }
     void Start(){
         thisScene = SceneManager.GetActiveScene().name;  
     }
@@ -33,7 +38,12 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadSceneAsync("StageSelect");
     }
-
+    public void GameOver()
+    {
+        Time.timeScale = 0f;
+        gameoverMenu.SetActive(true);
+        gameoverMenu.transform.localScale = new Vector3(1f, 1f, 1f);
+    }
 
 
 
