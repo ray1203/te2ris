@@ -15,6 +15,7 @@ TagManager:
   - spring
   - right spring
   - left spring
+  - thorn
   layers:
   - Default
   - TransparentFX
