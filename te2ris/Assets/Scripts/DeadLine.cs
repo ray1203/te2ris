@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class DeadLine : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        GameManager.instance.GameOver();
+        if(collision.transform.CompareTag("Player"))
+            GameManager.instance.GameOver();
+        else if (collision.transform.CompareTag("ground"))
+        {
+            Destroy(collision.gameObject);
+        }
     }
 }
