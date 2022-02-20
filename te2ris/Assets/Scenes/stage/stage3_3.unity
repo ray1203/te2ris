@@ -12587,7 +12587,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisScene: 
-  timerTxt: {fileID: 1254075861}
+  timerTxt: {fileID: 717361138}
   fail: {fileID: 516384395}
   time: 100
 --- !u!114 &1607598174
@@ -14048,7 +14048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisScene: 
-  timerTxt: {fileID: 1254075861}
+  timerTxt: {fileID: 717361138}
   fail: {fileID: 516384395}
   time: 100
 --- !u!114 &1848259054
