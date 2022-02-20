@@ -106,6 +106,10 @@ public class block : MonoBehaviour
         {
             myrigid.velocity = Vector2.right * 10;
         }
+        if (collision.gameObject.tag == "spring")
+        {
+            myrigid.velocity = Vector2.up * 5;
+        }
     }
 
     public void failPageOn()
