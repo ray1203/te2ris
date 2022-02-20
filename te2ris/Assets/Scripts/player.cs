@@ -112,6 +112,10 @@ public class player : MonoBehaviour
         {
             myrigid.velocity = Vector2.right * 10;
         }
+        if (collision.gameObject.tag == "spring")
+        {
+            myrigid.velocity = Vector2.up * 5;
+        }
     }
 
 }
