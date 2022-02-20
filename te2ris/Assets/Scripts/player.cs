@@ -101,5 +101,17 @@ public class player : MonoBehaviour
             Time.timeScale = 0f;
         }
     }
-   
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "left spring")
+        {
+            myrigid.velocity = Vector2.left * 10;
+        }
+        if (collision.gameObject.tag == "right spring")
+        {
+            myrigid.velocity = Vector2.right * 10;
+        }
+    }
+
 }

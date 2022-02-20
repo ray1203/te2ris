@@ -13,6 +13,8 @@ TagManager:
   - wall
   - overLine
   - spring
+  - right spring
+  - left spring
   layers:
   - Default
   - TransparentFX
