@@ -114,7 +114,7 @@ public class player : MonoBehaviour
         }
         if (collision.gameObject.tag == "spring")
         {
-            myrigid.velocity = Vector2.up * 5;
+            myrigid.velocity = Vector2.up * 7;
         }
     }
 
