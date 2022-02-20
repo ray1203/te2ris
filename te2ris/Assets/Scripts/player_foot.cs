@@ -5,17 +5,6 @@ using UnityEngine;
 public class player_foot : MonoBehaviour
 {
     public player obj;
-    // Start is called before the first frame update
-    void Start()
-    {
-        //obj = GetComponent<player>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerStay2D(Collider2D other) {
         if(other.gameObject.tag == "ground")
