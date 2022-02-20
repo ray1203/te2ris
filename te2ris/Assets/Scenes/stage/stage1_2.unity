@@ -2316,6 +2316,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisScene: 
   pauseMenu: {fileID: 1881159769}
+  gameoverMenu: {fileID: 1381385360}
 --- !u!81 &561983424
 AudioListener:
   m_ObjectHideFlags: 0
@@ -4413,6 +4414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisScene: 
   pauseMenu: {fileID: 1881159769}
+  gameoverMenu: {fileID: 0}
 --- !u!114 &944036580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13457,6 +13459,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisScene: 
   pauseMenu: {fileID: 1881159769}
+  gameoverMenu: {fileID: 0}
 --- !u!114 &1722097388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13605,6 +13608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisScene: 
   pauseMenu: {fileID: 1881159769}
+  gameoverMenu: {fileID: 0}
 --- !u!114 &1729782923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15194,6 +15198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisScene: 
   pauseMenu: {fileID: 1881159769}
+  gameoverMenu: {fileID: 0}
 --- !u!114 &1881159771
 MonoBehaviour:
   m_ObjectHideFlags: 0

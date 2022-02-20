@@ -2699,6 +2699,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisScene: 
   pauseMenu: {fileID: 1600483241}
+  gameoverMenu: {fileID: 0}
 --- !u!114 &550466786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2966,6 +2967,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisScene: 
   pauseMenu: {fileID: 1600483241}
+  gameoverMenu: {fileID: 1540222447}
 --- !u!81 &557164861
 AudioListener:
   m_ObjectHideFlags: 0
@@ -4246,6 +4248,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &757170466
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2608993311256086945, guid: d2515fb524534f74ab1801170a9f4267, type: 3}
+      propertyPath: m_Name
+      value: deadline
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500409179345497567, guid: d2515fb524534f74ab1801170a9f4267, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500409179345497567, guid: d2515fb524534f74ab1801170a9f4267, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500409179345497567, guid: d2515fb524534f74ab1801170a9f4267, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500409179345497567, guid: d2515fb524534f74ab1801170a9f4267, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 67.39353
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500409179345497567, guid: d2515fb524534f74ab1801170a9f4267, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500409179345497567, guid: d2515fb524534f74ab1801170a9f4267, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500409179345497567, guid: d2515fb524534f74ab1801170a9f4267, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500409179345497567, guid: d2515fb524534f74ab1801170a9f4267, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500409179345497567, guid: d2515fb524534f74ab1801170a9f4267, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500409179345497567, guid: d2515fb524534f74ab1801170a9f4267, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500409179345497567, guid: d2515fb524534f74ab1801170a9f4267, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d2515fb524534f74ab1801170a9f4267, type: 3}
 --- !u!1 &874213224
 GameObject:
   m_ObjectHideFlags: 0
@@ -11441,6 +11500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisScene: 
   pauseMenu: {fileID: 1600483241}
+  gameoverMenu: {fileID: 0}
 --- !u!114 &1348501338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12947,6 +13007,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisScene: 
   pauseMenu: {fileID: 1600483241}
+  gameoverMenu: {fileID: 0}
 --- !u!114 &1600483243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14275,6 +14336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisScene: 
   pauseMenu: {fileID: 1600483241}
+  gameoverMenu: {fileID: 0}
 --- !u!114 &1809243535
 MonoBehaviour:
   m_ObjectHideFlags: 0
